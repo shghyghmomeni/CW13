@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.btns {
+  width: 100%;
+  /* height: 15%; */
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+.btns div {
+  position: relative;
+  flex: 1;
+  background-color: #d4d4d4;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  border: none;
+  background-color: transparent;
+}
+.btns span {
+  width: 35px;
+  height: 35px;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.activeBtn {
+  background-color: white !important;
+  border-bottom: none !important;
+  padding-top: 30px;
+}
+.activeBtn span {
+  position: relative;
+  top: 20px;
+}
+
+.info {
+  padding: 10px 20px;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info svg {
+  fill: #6c6161;
+}
+.info h3 {
+  margin-right: 6px;
+}
+
+.main {
+  overflow: auto;
+}
+.to-do-list {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.to-do-list svg {
+  fill: #6c6161;
+}
+.to-do-item-rigth {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+}
+.to-do-item-left {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+}
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.footer {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+#taskTitle {
+  height: 7vh;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+}
+.taskTime {
+  color: black;
+  height: 7vh;
+  border: none;
+  border-radius: 10px;
+}
+.taskTimeDiv{
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 30px;
+}
+.footer button {
+  height: 7vh;
+  color: white;
+  background-color: #1ac185;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.done {
+  background-color: #4d7355;
+}
+.done .bi-check2-circle {
+  fill: #05fe96;
+}
+.done h3 {
+  text-decoration: line-through;
+}
