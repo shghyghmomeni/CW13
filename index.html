@@ -9,6 +9,7 @@
     <link href="font.css" rel="stylesheet" />
     <link href="login.css" rel="stylesheet" />
     <link href="todo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="editform.css" />
   </head>
 
   <body>
@@ -24,30 +25,31 @@
       <div class="btns">
         <div class="weekDays activeBtn" data-day="shanbe">
           <button data-day="shanbe">شنبه</button
-          ><span data-day="shanbe">5</span>
+          ><span class="count" data-day="shanbe">5</span>
         </div>
         <div class="weekDays" data-day="yekshanbe">
           <button data-day="yekshanbe">یکشنبه</button
-          ><span data-day="yekshanbe">5</span>
+          ><span class="count" data-day="yekshanbe">5</span>
         </div>
         <div class="weekDays" data-day="doshanbe">
           <button data-day="doshanbe">دوشنبه</button
-          ><span data-day="doshanbe">5</span>
+          ><span class="count" data-day="doshanbe">5</span>
         </div>
         <div class="weekDays" data-day="seshanbe">
           <button data-day="seshanbe">سه شنبه</button
-          ><span data-day="seshanbe">5</span>
+          ><span class="count" data-day="seshanbe">5</span>
         </div>
         <div class="weekDays" data-day="charshanbe">
           <button data-day="charshanbe">چهارشنبه</button
-          ><span data-day="charshanbe">5</span>
+          ><span class="count" data-day="charshanbe">5</span>
         </div>
         <div class="weekDays" data-day="panjshanbe">
           <button data-day="panjshanbe">پنج شنبه</button
-          ><span data-day="panjshanbe">5</span>
+          ><span class="count" data-day="panjshanbe">5</span>
         </div>
         <div class="weekDays" data-day="jome">
-          <button data-day="jome">جمعه</button><span data-day="jome">5</span>
+          <button data-day="jome">جمعه</button
+          ><span class="count" data-day="jome">5</span>
         </div>
       </div>
       <div class="info">
@@ -98,6 +100,14 @@
         <input id="taskTitle" type="text" />
         <input id="taskTime" class="taskTime" type="time" />
         <button id="addTaskBtn" type="submit">افزودن</button>
+      </div>
+
+      <div class="edit-task-modal">
+        <div class="edit-form">
+          <input type="text" name="text" id="edited-task-title" />
+          <input type="time" id="edited-task-time" />
+          <button type="submit" class="btn" id="edit-submit">ثبت</button>
+        </div>
       </div>
     </div>
     <script src="./login.js"></script>
